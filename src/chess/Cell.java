@@ -26,10 +26,10 @@ public class Cell extends JPanel implements Cloneable{
 		setLayout(new BorderLayout());
 	
 	 if((x+y)%2==0)
-	  setBackground(Color.white);
+	  setBackground(new Color(113,198,113));
 	
 	 else
-	  setBackground(new Color(113,198,113));
+	  setBackground(Color.white);
 	 
 	 if(p!=null)
 		 setPiece(p);
@@ -42,9 +42,9 @@ public class Cell extends JPanel implements Cloneable{
 		this.y=cell.y;
 		setLayout(new BorderLayout());
 		if((x+y)%2==0)
-			setBackground(Color.white);
-		else
 			setBackground(new Color(113,198,113));
+		else
+			setBackground(Color.white);
 		if(cell.getpiece()!=null)
 		{
 			setPiece(cell.getpiece().getcopy());
